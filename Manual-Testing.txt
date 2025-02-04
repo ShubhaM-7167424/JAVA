@@ -1,0 +1,341 @@
+***********************************SESSION-01******************************************
+Q. What is Software ?
+Ans => Software is a collection of programs to help us perform a task.
+
+Q. Types of Software ?
+Ans => Application Software
+       System Software
+       Programming Software
+
+Q.What is Application Software
+Ans => Application Software is used to perform specific tasks.
+      => Example: Ms-Office , Paint, Games, Music App.
+
+Q. What is System Software
+Ans => System Software is used to manage the computer hardware and 
+       provide a platform for running application software.
+      => Example: Operating System, Device Drivers
+
+Q. What is Programming Software
+Ans => Programming Software is used to write, test and debug other software.
+      => IDE like VsCode , Ecllipse.
+
+
+Q. What is Software Testing ?
+Ans => Software testing is a part of Software Devlopment Process 
+       where the product is verified and validated to ensure
+
+       1. Software is bug-free
+       2. meets the customer requirements
+       3. timely delivery of product within the budget
+       4. Maintainable product
+
+
+Q. Why Software testing is important ?
+Ans => 1. To detect bugs
+       2. To improve quality of the product
+       3. To reduce maintenance cost
+       4. To gain customer satisfaction
+
+Q. What is error , Bug/Defect  & Failure ?
+Ans => Error : Mistake made by the developer
+       Bug/Defect : When the error is encountered during testing
+       Failure : When the end user encounters the bug/defect in the application.
+
+Q. Reasons of Software Bugs ?
+Ans => 1. Miscommunication between stakeholders , Devlopment and testing team.
+       2. Frequent Changing Requirements
+       3. Time Pressure
+       4. Unskilled testing team
+       5. Complexity of Software
+       6. Programming Errors              
+
+***********************************SESSION-02******************************************
+
+Q. What is Software Devlopment life cycle (SDLC) or Application Devlopment life cycle ?
+Ans => SDLC is a systematic process for planning, creating, testing, and deploying 
+       an  software application.
+
+       SDLC Phases:
+       1. Requirement Gathering & Analysis
+       2. Planning
+       3. Design 
+       4. Development/Implementation
+       5. Testing
+       6. Deployment
+       7. Maintenance
+
+Each phase produces specific deliverables that serve as input for the next phase.
+
+Q. SDLC models ?
+/*
+SDLC Models:
+
+1. Waterfall Model:
+   - Sequential/Linear model
+   - Each phase must be completed before next phase begins
+   - Best for small projects with clear requirements
+
+/*
+Advantages of Waterfall Model:
+1. Simple and easy to understand
+2. Each phase has specific deliverables and review process to make it easy to manage.
+3. Works well for small projects with clear requirements
+4. Clearly defined stages
+5. Process and results are well documented
+
+Disadvantages of Waterfall Model:
+1. No flexibility to accommodate changes. 
+2. Not suitable for complex/long projects
+3. Testing starts late in development cycle.
+4. if there is defect in the requirement phase it will be continued in the later phases also.
+
+*/            
+
+2. Spiral Model:
+   - Combines iterative development with waterfall aspects
+   - it allows Incremental releases of the product through each iteration of the spiral.
+   - Focus on risk analysis
+   - Good for large, complex projects
+
+/*
+Advantages of Spiral Model:
+1. it allows requirement changes
+2. Good for large and complex projects
+3. Progressive development with small increments
+4. Software is produced early in the lifecycle
+5. Additional functionality can be added at a later date
+6. it allows better risk analysis
+7. cost effective due to good risk management
+
+Disadvantages of Spiral Model:
+1. Not suitable for small projects
+2. Project success heavily dependent on risk analysis
+3. Documentation is more complex
+4. High cost of risk analysis and planning
+5. Requires strict management control
+*/
+
+3. V-Model (Verification & Validation):
+   - Extension of Waterfall model
+   - Testing activities parallel to development activities
+   - Each development phase has corresponding testing phase
+   
+   /*
+Advantages of V-Model:
+1. Testing starts in the early stages of product devlopment
+2. Early test planning helps detect defects in early stages
+3. Higher success rate due to parallel development and testing activities
+4. Very structured and disciplined approach
+
+Disadvantages of V-Model:
+1. initial investment is more bcz devlopment and testing teams involves right from the early age.
+2. Whenever there is a change in requirement , the same procedure continues. it leads to more Documentation.
+*/      
+
+/*
+Verification and Validation in V-Model:
+
+Verification (Left Side):
+- Reviews and walkthroughs of requirements, design, and code
+- Ensures we are building the  right product or not
+- Static testing activities
+- Includes:
+  - Requirements Review
+  - Architecture Review  
+  - Design Review
+  - Code Review
+
+Validation (Right Side): 
+- Actual testing activities
+- Ensures we are building the product right 
+- Dynamic testing activities
+- Includes:
+  - Unit Testing
+  - Integration Testing
+  - System Testing
+  - Acceptance Testing
+
+Mapping between phases:
+1. Business Requirements <-> Acceptance Testing
+2. System Requirements <-> System Testing  
+3. High Level Design <-> Integration Testing
+4. Low Level Design <-> Unit Testing
+
+Each development phase on left has corresponding test phase on right
+Testing preparation begins in parallel with development activities
+Helps detect defects early in the lifecycle
+*/
+
+***********************************SESSION-03******************************************
+
+/*
+Technical Review:
+1. Formal meeting led by trained moderator
+2. Technical Reviewers read the document before meeting for better understanding
+2. Focus on technical quality and correctness
+4. Suggest improvement to the author.
+5. Typically for design and code reviews
+6. Structured but less formal than inspection
+
+Walkthrough:
+1. Informal meeting led by author with his peers
+2. Author walks through work product 
+3. the peers will give suggestions
+4. Good for early feedback and knowledge sharing
+5. More flexible and casual approach
+
+Inspection:
+1. Most formal and rigorous review type
+2. Led by trained inspector/moderator
+3. Extensive preparation required
+4. Strict entry/exit criteria
+5. Detailed defect logging and metrics
+6. Specific roles assigned to participants
+7. Focus on finding defects
+8. Most effective but time consuming
+*/
+
+Q. Participants of a review process ?
+Ans => 
+/*
+Review Process Participants:
+
+1. Moderator/Inspector:
+   - Schedule the meeting and Leads  the review process
+   - Distribute documents to other participants
+   - He keeps discussion focused
+   - Ensures review objectives are met
+
+2. Author:
+   - He is the writer of the "document under review"
+   - Presents and explains the work
+   - Answers questions during review
+   - Responsible for fixing identified defects
+
+3. Reviewers/Inspectors:
+   - Review the work product before meeting
+   - Identify defects and issues
+   - Provide constructive feedback 
+   - Share domain knowledge and expertise
+
+4. Scribe/Recorder:
+   - Documents defects and issues found
+   - Records action items and decisions
+   - Helps create review report
+
+Q. What is Quality Assurance vs Quality Control vs Quality Engineer ?
+Ans => 
+/*
+Quality Assurance (QA):
+- Process oriented approach
+- Focuses on preventing defects
+- Defines processes, standards and methodologies
+- Ensures quality is built into the development process
+- Example activities:
+  - Process definition and improvement
+  - Training and mentoring
+  - Establishing standards
+  - Process audits
+
+Quality Control (QC):
+- Product oriented approach  
+- Focuses on finding defects
+- Verifies if product meets requirements
+- Testing and inspection activities
+- Example activities:
+  - Testing
+  - Code reviews
+  - Defect tracking
+  - Product inspections
+
+Quality Engineer (QE):
+- Responsible for both QA and QC activities
+- Designs and implements quality processes
+- Plans and executes testing
+- Analyzes quality metrics
+- Makes recommendations for improvements
+- Example responsibilities:
+  - Test planning and strategy
+  - Process improvement
+  - Defect prevention
+  - Quality metrics analysis
+  - Test automation
+*/
+
+***********************************SESSION-04******************************************
+
+Q. Levels of Software testing ?
+/*
+Levels of Software Testing:
+
+1. Unit Testing:
+   - Testing individual components/modules in isolation
+   - Done by developers
+   - Tests smallest testable parts of application
+   - Uses test doubles (mocks, stubs) for dependencies
+   - Example: Testing a single function/method
+
+2. Integration Testing:
+   - Testing interaction between integrated components
+   - Verifies different modules work together correctly
+   - Types:
+     - Top-down Integration  
+     - Bottom-up Integration
+
+#Explain Top-down Integration  and Bottom-up Integration with example ?
+/*
+Top-down Integration Testing:
+- Testing starts from top level modules and gradually moves down
+- Lower level modules are simulated using stubs
+- Follows system's control flow
+
+Example:
+Consider an e-commerce application:
+1. Start with main shopping cart module
+2. Use stubs for:
+   - Product catalog module
+   - Payment processing module 
+   - User authentication module
+3. Gradually replace stubs with actual modules
+4. Test integration at each step
+
+Bottom-up Integration Testing:
+- Testing starts with lowest level modules and moves up
+- Higher level modules are simulated using drivers
+- Builds system from bottom to top
+
+Example:
+Consider same e-commerce application:
+1. Start with lowest level modules:
+   - Database access layer
+   - Individual product objects
+   - Payment gateway interface
+2. Use drivers to test these modules
+3. Integrate and test:
+   - Product catalog module
+   - Shopping cart calculations
+   - Order processing
+4. Finally integrate with main application module
+*/      
+
+3. System Testing:
+   - Testing complete integrated system
+   - Verifies functional & non-functional requirements
+   - Tests system as a whole in production-like environment
+   - Types:
+     - Functional Testing
+     - Performance Testing
+     - Security Testing
+     - Usability Testing
+     - Recovery Testing
+
+4. Acceptance Testing:
+   - Final testing before system goes live
+   - Verifies system meets business requirements
+   - Done by end users/customers
+   - Types:
+     - Alpha Testing (internal users)
+     - Beta Testing (external users) 
+     - User Acceptance Testing (UAT)
+*/ 
