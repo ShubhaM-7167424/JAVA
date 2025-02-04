@@ -1,3 +1,6 @@
+===================================10:32==================================
+************************DATABASE CREATION and ALTER COMMANDS**************
+
 CREATE DATABASE mydb;
 
 use mydb;
@@ -6,3 +9,84 @@ drop DATABASE mydb;
 
 alter DATABASE mydb READ ONLY = 1;
 alter DATABASE mydb READ ONLY = 0;
+
+===================================14:30==================================
+************************How to CREATE TABLES IN MYSQL**************
+
+CREATE Table employees(
+      employee_id INT,
+      first_name VARCHAR(50),
+      last_name VARCHAR(50),
+      hourly_pay DECIMAL(5,2),
+      hire_date date
+);
+
+SELECT * FROM employees;
+
+RENAME TABLE employees to workers;
+RENAME TABLE workers to employees;
+
+ALTER TABLE employees
+ADD phone_number INT;
+
+ALTER TABLE employees
+RENAME COLUMN phone_number to email;
+
+ALTER TABLE employees
+MODIFY email VARCHAR(100);
+
+ALTER Table employees
+MODIFY email VARCHAR(100)
+after last_name;
+
+ALTER Table employees
+MODIFY email VARCHAR(100)
+first;
+
+ALTER Table employees
+drop email;
+
+===================================22:40==================================
+************************How to INSERT ROWS INTO A TABLE**************
+
+INSERT INTO employees
+VALUES  (1, "Vijay", "Kumar", 12.83, "2025-01-03"),
+        (2, "Puja", "Tomar", 15.75, "2025-01-04"), 
+        (3, "Kalyan", "Tyagi", 13.33, "2025-01-05"),
+        (4, "Shubham", "Singh", 19.41, "2025-01-06"),
+        (5, "Rahul", "Varghi", 20.59, "2025-01-07");
+
+INSERT INTO employees (employee_id, first_name, last_name)
+VALUE (6, "Joy", "Das");
+
+===================================28:32==================================
+************************How to SELECT ROWS FROM A TABLE**************
+
+SELECT * from employees;
+
+SELECT first_name, last_name
+FROM employees;
+
+SELECT * FROM employees
+WHERE employee_id = 1;
+
+SELECT * FROM employees
+WHERE first_name = "shubham";
+
+SELECT * FROM employees
+WHERE hourly_pay >= 15;
+
+SELECT * FROM employees
+WHERE hire_date <= "2025-01-04";
+
+SELECT * FROM employees
+WHERE employee_id != 1;
+
+SELECT * FROM employees
+WHERE hire_date is NULL;
+
+SELECT * FROM employees
+WHERE hire_date is not NULL;
+
+===================================28:32==================================
+************************How to SELECT ROWS FROM A TABLE**************
