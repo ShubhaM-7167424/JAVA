@@ -1,0 +1,8 @@
+CREATE DATABASE mydb;
+
+use mydb;
+
+drop DATABASE mydb;
+
+alter DATABASE mydb READ ONLY = 1;
+alter DATABASE mydb READ ONLY = 0;
