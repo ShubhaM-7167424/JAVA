@@ -88,5 +88,59 @@ WHERE hire_date is NULL;
 SELECT * FROM employees
 WHERE hire_date is not NULL;
 
-===================================28:32==================================
-************************How to SELECT ROWS FROM A TABLE**************
+===================================33:35==================================
+************************How to UPDATE AND DELETE DATA A TABLE**************
+
+UPDATE employees
+SET hourly_pay = 10.55,
+    hire_date = "2025-01-08"
+where employee_id = 6;
+
+SELECT * FROM employees;
+
+UPDATE employees
+set hourly_pay = 10.25;
+
+DELETE FROM employees;
+=> Don't do this it will DELETE all ROWS from your Table
+
+DELETE FROM employees
+WHERE employee_id = 1;
+
+SELECT * FROM employees;
+
+===================================37:05==================================
+****************************AUTOCOMMIT , COMMIT AND ROLLBACK**************
+
+=> By Default AUTOCOMMIT is on
+
+SET autocommit = 0;
+
+DELETE FROM employees;
+
+SELECT * FROM employees;
+
+ROLLBACK;
+
+SELECT * FROM employees;
+
+DELETE FROM employees;
+
+COMMIT
+
+===================================39:43==================================
+****************************GETTING CURRENT DATE AND TIME IN MYSQL********
+
+CREATE TABLE test(
+      my_date DATE,
+      my_time TIME,
+      my_datetime DATETIME
+);
+
+INSERT INTO test
+VALUES (CURRENT_DATE(), CURRENT_TIME(), NOW());
+
+SELECT * FROM test;
+
+DROP TABLE test;
+
