@@ -1,0 +1,51 @@
+Features of Java
+
+1. Simple
+=> java is simple and easy to understand. The syntaxes are easy to learn
+=> in c we have complex concepts like structures and pointers which is removed in java
+
+2. Robust
+=> java uses strong memory management
+
+3. Security
+=> an application developed using java is virus-free
+
+4. Java is an object oriented Programming language(OOPs)
+=> 4 pillars of OOPs are
+=> Encapsulations
+=> Inheritence
+=> Polymorphism
+=> Abstraction
+
+5. Platform Independent
+=> java is platform Independent
+=> means we can run a java program written on one operating system to other operating system
+=> if we write a java program in windows-11 then we can execute the same java program on windows10,
+ macOS, or linux
+
+6. Portable
+=> it facilitates us to carry the code from one system to another system.
+
+7. Multithreading
+=> java supports Multithreading concepts
+=> means different threads can be executed at the same time.
+
+language => is a medium to communicate b/w two persons
+Programming lang => a lang that is used to give a set of instruction to the system to execute 
+                    a task is know as a Programming lang.
+
+Types of Programming lang
+
+1. High level lang(English like code)
+=> a lang which is understandable by humans or programmers is known as HLL
+=> ex. C, C++ , java
+
+2. Low level lang(Binary Code)
+=> a lang which is understandable by machine only is known as low level lang
+=> binary lang is understandable by machine
+=> binary lang means  a series of 0s and 1s
+
+3. Mid level lang(Byte Code)
+=> mid level lang helps us to convert high level lang to low level lang
+=> mid level lang cannot be understandable by humans or machine
+=> only JVM can understand mid level lang
